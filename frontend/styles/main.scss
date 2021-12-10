@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+*{
+    font-family: 'Assistant', sans-serif;
+    color: #6e6e6e;
+}
+
+nav{
+  .nav-brand{
+      font-size: 30px;
+      color: #244D4D;
+      font-weight: 700;
+
+      &:hover{
+          text-decoration: none;
+      }
+  }
+
+  #wrap {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    float: right;
+    padding: 0;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    color: #555;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+  
+  input[type="text"]:focus {
+    width: 270px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+  }
+  input[type="submit"] {
+    height: 37px;
+    width: 33px;
+    display: inline-block;
+    color:red;
+    float: right;
+    background: url(../image/ic-search.png)no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+  }
+  
+  input[type="submit"]:hover {
+    opacity: 0.8;
+  }
+}
+
+header{
+  .header-pic{
+    margin-top: 30px;
+    overflow: hidden;
+    height: 700px;
+    margin-left: 30%;
+    background-image: url(../image/header-pic.jpg);
+    background-size: cover;
+    display: block;
+  }
+
+  .vision{
+    width: 400px;
+    background-color: #244D4D;
+    margin-top: -530px;
+    padding: 50px;
+
+    h1{
+      color: #fff;
+      font-family: "Lat";
+      font-weight: 700;
+      font-size: 45px;
+    }
+
+    p{
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+
+main{
+  margin-top: 250px;
+  .benefit{
+    .benefit-top{
+      .line{
+        margin: auto;
+
+        hr{
+          background-color: #244D4D;
+          height: 2px;
+          margin: auto;
+        }
+      }
+      .title{
+        h1{
+          font-family: "Lat";
+          color: #111;
+          font-size: 40px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .benefit-bot{
+      margin-top: 50px;
+      .benefit-content{
+        .benefit-icon{
+          span{
+            font-size: 40px;
+            color: #244D4D;
+          }
+        }
+        .benefit-text{
+          h2{
+            font-weight: 700;
+            color: #111;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .experience{
+    margin-top: 50px;
+    .experience-top{
+      .experience-image{
+        img{
+          object-fit: cover;
+          height: 500px;
+        }
+      }
+      .experience-content{
+        h1{
+          font-family: "Lat";
+          color: #111;
+          font-size: 40px;
+          font-weight: 700;
+        }
+        p{
+
+        }
+        .experience-trust{
+          h2{
+            color: #111;
+            font-weight: 700;
+            font-size: 35px;
+          }
+        }
+        .btn-learn{
+          margin-top: 20px;
+          a{
+            padding: 15px 30px;
+            color: #244D4D;
+            border: 1px solid #244D4D;
+            &:hover{
+              color: #fff;
+              text-decoration: none;
+              background-color: #244D4D;
+            }
+          }
+        }
+      }
+    }
+
+    .experience-bot{
+      margin-top: 50px;
+      .experience-step{
+        h1{
+          font-family: "Lat";
+          color: #111;
+          font-size: 40px;
+          font-weight: 700;
+        }
+        .step{
+          margin-top: 25px;
+          .step-num{
+            h3{
+              width: 60px;
+              height: 60px;
+              color: #fff;
+              text-align: center;
+              font-size: 20px;
+              font-weight: 500;
+              padding: 17.5px;
+              border-radius: 100%;
+              background-color: #244D4D;
+            }
+          }
+          .step-content{
+            h2{
+              color: #111;
+              font-weight: 700;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .experience-image{
+        img{
+          object-fit: cover;
+          height: 500px;
+        }
+      }
+    }
+  }
+
+  .customer{
+    margin-top: 50px;
+    .customer-header{
+      h1{
+        font-family: "Lat";
+        color: #111;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .customer-btn{
+        margin: auto 0 auto auto;
+        a{
+          span{
+            font-size: 35px;
+            &:hover{
+              color: #244D4D;
+            }
+          }
+        }
+      }
+    }
+    .customer-content{
+      margin-top: 25px;
+      .card{
+        background-color: #244D4D;
+        border-radius: 0;
+        padding: 15px;
+        margin: 10px 0;
+        span{
+          color: #EAA97B;
+          font-size: 28px;
+          margin-bottom: 20px;
+        }
+        h5{
+          color: #fff;
+          font-weight: 700;
+        }
+        p{
+          color: rgb(236, 236, 236);
+          font-weight: 300;
+        }
+        .customer-profile{
+          margin-top: 20px;
+          .customer-pic{
+            img{
+              height: 50px;
+            }
+          }
+          .customer-identity{
+            h6{
+              color: #fff;
+              font-weight: 700;
+            }
+            p{
+              color: rgb(236, 236, 236);
+              font-weight: 300;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe{
+    margin-top: 50px;
+    h1{
+      color: #111;
+      font-family: "Lat";
+      font-weight: 700;
+      font-size: 40px;
+    }
+    form{
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #fff;
+      input{
+        border: none;
+        border-radius: 0;
+        padding: 25px;
+      }
+      .btn-email{
+        background-color: #244D4D;
+        color: #fff;
+        border-radius: 0;
+        font-size: 14px;
+        &:hover{
+          background-color: #153b3b;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #244D4D;
+  margin: -30px auto 0;
+  padding: 150px 0;
+  
+  h2{
+    color: #fff;
+    font-family: "Lat";
+    font-weight: 600;
+  }
+  h4{
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  p{
+    color: #fff;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  a{
+    color: #fff;
+    font-weight: 300;
+    &:hover{
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+    }
+  }
+  span{
+    color: #fff;
+    &:hover{
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+    }
+  }
+}
